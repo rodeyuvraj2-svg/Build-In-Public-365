@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        :root{
+            --main: rgb(142, 30, 162);
+            --second: rgb(237, 150, 215);
+            --back: rgb(237, 150, 215);
+            --secback: rgb(142, 30, 162);
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            padding: 10px 20px;
+            gap: 10px;
+        }
+
+        ul li{
+            padding: 5px;
+            color: var(--main);
+            background-color: var(--back);
+            cursor: pointer;
+            transition: 0.15s;
+        }
+
+        ul li:hover{
+            color: var(--second);
+            background-color: var(--secback);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Get Started</li>
+        </ul>
+    </nav>
+</body>
+</html>
