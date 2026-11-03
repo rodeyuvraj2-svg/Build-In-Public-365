@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: rgb(6, 0, 25);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .circle1{
+            position: absolute;
+            top:-20px;
+            z-index: 0;
+            left: 344px;
+            height: 286px;
+            width: 286px;
+            border-radius: 100%;
+            background-color: rgb(36, 102, 255);
+        }
+
+        .circle2{
+            position: absolute;
+            top: 520px;
+            z-index: 0;
+            left: 844px;
+            height: 286px;
+            width: 286px;
+            border-radius: 100%;
+            background-color: rgb(255, 166, 2);
+        }
+
+        .container{
+            backdrop-filter: blur(8px);
+            position: absolute;
+            top: 150px;
+            left: 520px;
+            z-index: 1;
+            width: 480px;
+            margin: auto;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.08);
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        #pfp{
+            margin-top: 30px;
+            border: 12px solid gray;
+            border-radius: 100%;
+            width: 145px;
+            height: 145px;
+            object-fit: cover;
+        }
+
+        .name{
+            margin-top: 10px;
+            font-size: 35px;
+            color: aliceblue;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .detail{
+            margin-top: 10px;
+            color: gray;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 28px;
+        }
+
+        .icons{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 12px;
+            gap:12px;
+        }
+
+        .icons img{
+            margin-top: 10px;
+            height: 50px;
+            border: 4px solid gray;
+            border-radius: 100%;
+        }
+
+        button{
+            cursor: pointer;
+            border: none;
+            width: 96px;
+            height: 44px;
+            font-size: 16px;
+            background-color: gray;
+            border-radius: 5px;
+            color: white;
+            padding: 10px 10px;
+            margin-left: 12px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="container">
+        <img id="pfp" src="https://imgs.search.brave.com/OpbbSPZD14-aVE7MlUQDBUBAPlpS04udkFCBMt7jnDo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjE5/MjIyMjExMi92ZWN0/b3IvcHJvZmlsZS1h/dmF0YXItb2YtYmVh/cmQtbWFuLXdlYXJp/bmctc3VuZ2xhc3Nl/cy5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9ODJldmhBR0hK/VHJhNmtqbFdORHdk/b21xR3VtVWpKb3Fx/dUdKbWJZQ0M1QT0" alt="profile">
+        <div class="name">Monalisha Roy</div>
+        <div class="detail">I am a Professional Web Designer</div>
+        <div class="icons">
+            <div class="yt">
+                <img src="https://imgs.search.brave.com/R3y_9Lrh_D6QShzlwBmtRdDhFW5qaFqqIu7BmqBw9vk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L3ByZW1pdW0tdmVj/dG9yL3lvdXR1YmUt/bG9nby1zbGVlay1w/cm9mZXNzaW9uYWwt/dmVjdG9yLWRlc2ln/bnNfOTc2MTc0LTU0/LmpwZz9zZW10PWFp/c19oeWJyaWQmdz03/NDAmcT04MA" alt="youtube">
+            </div>
+            <div class="fb">
+                <img src="https://imgs.search.brave.com/kFX8yLsBI8nwuqorl5FKmt4g23ikIdQhllo7j8JQ2r0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L3ByZW1pdW0tdmVj/dG9yL2ZhY2Vib29r/LXNvY2lhbC1tZWRp/YS1sb2dvLXN5bWJv/bF81MzYzMjYtNzIy/LmpwZz9nYT1HQTEu/MS4xNjYzMjIwODY4/LjE3OTM2OTcwOTIm/c2VtdD1haXNfaHli/cmlkJnc9NzQwJnE9/ODA" alt="facebook">
+            </div>
+            <div class="gg">
+                <img src="https://imgs.search.brave.com/qZVPyTIkg7Sqx0SvwkTeJEE2ShM6MziaaYwf36MQwv4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/aWNvbnM4LmNvbS8z/ZC1mbHVlbmN5LzEy/MDAvZ29vZ2xlLWxv/Z28uanBn" alt="google">
+            </div>
+            <div class="wp">
+                <img src="https://imgs.search.brave.com/8Gobd3d_f4RatvqMoetU728FNbnqqwDvbJbrax-x-zs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tYXJr/ZXRwbGFjZS5jYW52/YS5jb20vUEdQTUEv/TUFFVnRaUEdQTUEv/MS90bC9jYW52YS13/aGF0c2FwcC1sb2dv/LU1BRVZ0WlBHUE1B/LnBuZw" alt="whatsapp">
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="msg">Message</button>
+            <button class="bttn">Subscribe</button>
+        </div>
+    </div>
+    <div class="circle2"></div>
+</body>
+</html>
