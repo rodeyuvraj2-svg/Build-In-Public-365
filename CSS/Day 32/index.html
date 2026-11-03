@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More CSS selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        /* .boxes::first-line{
+            color: yellow;
+        }
+
+        .boxes *{
+            border: 2px solid black;
+        } */
+
+        /* .box:nth-child(even){
+            background-color: aqua;
+        }
+
+        .box:nth-last-child(1){
+            background-color: red;
+        } */
+
+        .boxes::before{
+            content: "HEYY THIS IS YUVRAJ";
+            color: blue;
+        }
+
+        .boxes::after{
+            content: "The End";
+            color: greenyellow;
+        }
+
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+        
+        .box::first-letter{
+            color: peru;
+            font-size: larger;
+        }
+
+        input::placeholder{
+            color: rgb(87, 87, 97);
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">I'm box</div>
+        <div class="box">I'm box</div>
+        <div class="box">I'm box</div>
+        <input type="text" placeholder="Enter your name nggg">
+    </div>
+</body>
+</html>
