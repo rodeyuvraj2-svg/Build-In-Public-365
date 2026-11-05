@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav{
+            position: sticky;
+            top: 0;
+        }
+
+        ul {
+            display: flex;  
+            gap: 12px;
+            background-color: blueviolet;
+            padding: 0px 19px;
+            justify-content: center;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 18px 26px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        ul li a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        #logo{
+            border-radius: 50%;
+            height: 85px;
+            width: 85px;
+            position: fixed;
+            
+            right: 2%;
+            bottom: 4%;
+            
+        }
+
+        .container{
+            padding: 35px;
+            margin: 28px 32px;
+            display: flex;
+            background-color: aqua;
+            height: 550px;
+            gap: 34px;
+            border: 2px solid black;
+            align-items: center;
+        }
+
+        .box1, .box2{
+            padding: 50px;
+            height: 450px;
+            width: 850px;
+            border: 2px solid black;
+        }
+
+        .box1{
+            background-color: blue;        
+        }
+
+        .box2{
+            background-color: rgb(0, 255, 183);
+        }
+
+        .desc{
+            margin: 45px 60px;
+            width: 60vw auto;
+            border: 3px solid black;
+            border-radius: 45px;
+            text-align: center;
+            font-size: 56px;
+        }
+
+        footer{
+            padding: 12px 25px;
+            text-align: center;
+            font-size: 25px;
+            background-color: rgba(243, 172, 86, 0.77);
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">Get Started</a></li>
+        </ul>
+    </nav>
+
+    <img id="logo"
+        src="https://imgs.search.brave.com/qhqePI4orXc_MvjO6kQpy-p7qFfhcuMBSP3Zhf2kl8M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9maXZl/cnItcmVzLmNsb3Vk/aW5hcnkuY29tL2Zf/YXV0byxxX2F1dG8s/Y19maWxsLGdfY2Vu/dGVyL3YxL2F0dGFj/aG1lbnRzL2dlbmVy/aWNfYXNzZXQvYXNz/ZXQvNzAxMzVjMmQ0/N2I0YTQ4OTI4OTc1/MjRlYjAwZTZhOWEt/MTY1MjQ0NzE1NTAz/MC9sb2dvLTQucG5n">
+
+    <main>
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>    
+    </main>
+
+    <div class="desc">Welcome to this Sigma Web<br>Development Express</div>
+    
+    <footer>This is Yuvraj - The Vibe Coder</footer>
+</body>
+
+</html>
